@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>chit-chat Room</title>
+        <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Otomanopee+One&display=swap" rel="stylesheet">
+    
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
+    
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    
+        <link rel="stylesheet" type="text/css" href="chit-chat_room.css">
+    </head>
+    <body>
+        <div class="container">
+            <button id="logout" class="glyphicon glyphicon-log-out btn btn-danger" onclick="logOut()">
+                <font style="font-family: 'Bree Serif', serif;">&nbsp;Logout</font>
+            </button>
+            <center>
+                <h1 class="header">	chit-chat	<sup><img src="message.png"></sup></h1>
+                <h3 id="user_name" class="color_white"></h3>
+    
+                <div class="form-group input_div_room_page">
+                    <label>#Add Room:</label>
+                    <input type="text" id="room_name" class="form-control" placeholder="Enter room name">
+                </div>
+    
+                <button onclick="addRoom()" class="btn btn-success">Add Room</button>
+                <br>
+    
+                <h3 class="color_white"> TRENDING ROOMS </h3>
+                <div id="output"></div>
+            </center>
+        </div>
+        <script src="chit-chat_room.js"></script>
+    </body>
+</html>

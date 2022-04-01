@@ -1,0 +1,49 @@
+html, body
+{
+    height: 93%;
+    align-content: center;
+    margin: 17px;
+}
+
+body
+{
+    background: linear-gradient(to right top, #ff2f6e, #ff3493, #f94dff);
+    background-repeat: no-repeat;
+    font-family: 'Bree Serif', serif;
+}
+
+.header
+{
+	color: white;
+    font-family: 'Otomanopee One', sans-serif;
+    font-size: 45px;
+    letter-spacing: 2px;
+    margin-top: 80px;
+}
+.header img
+{
+	width: 80px;
+    margin-left: -15px;
+}
+
+.login_div
+{
+	background: rgba(255,255,255,0.8);
+    width: 45%;
+    float: none;
+    border-radius: 15px;
+}
+
+.logo
+{
+	width: 80px;
+    margin-top: 30px;
+    border-radius: 40px;
+}
+
+#login_button
+{
+	width: 60%;
+    font-size: 18px;
+    border-radius: 15px;
+}
